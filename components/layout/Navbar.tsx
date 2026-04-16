@@ -27,7 +27,7 @@ export function Navbar() {
           <Link href="/" className="flex items-center gap-2 shrink-0">
             <span className="text-2xl">🐱</span>
             <span className="text-xl font-bold text-stone-800">
-              Gato <span className="text-orange-500">Caina</span>
+              Pelusas <span className="text-orange-500">Tienda Animal</span>
             </span>
           </Link>
 

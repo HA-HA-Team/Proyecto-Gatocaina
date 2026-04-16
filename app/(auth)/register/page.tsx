@@ -83,7 +83,7 @@ export default function RegisterPage() {
         <div className="text-5xl mb-3">🐾</div>
         <h1 className="text-2xl font-bold text-stone-800">Crear una cuenta</h1>
         <p className="text-stone-500 text-sm mt-1">
-          Unete a la familia de Gato Caina
+          Unete a la familia de Pelusas Tienda Animal
         </p>
       </div>
 

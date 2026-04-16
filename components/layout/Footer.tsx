@@ -13,7 +13,7 @@ export function Footer() {
             <Link href="/" className="flex items-center gap-2 mb-4">
               <span className="text-2xl">🐱</span>
               <span className="text-xl font-bold text-white">
-                Gato <span className="text-orange-400">Caina</span>
+                Pelusas <span className="text-orange-400">Tienda Animal</span>
               </span>
             </Link>
             <p className="text-sm text-stone-400 leading-relaxed max-w-xs">
@@ -72,7 +72,7 @@ export function Footer() {
 
         <div className="border-t border-stone-700 mt-10 pt-8 text-center text-sm text-stone-500">
           <p>
-            &copy; {year} Gato Caina. Hecho con{" "}
+            &copy; {year} Pelusas tienda Animal. Hecho con{" "}
             <span className="text-orange-400">&#9829;</span> para los amantes
             de los gatos.
           </p>

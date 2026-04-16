@@ -9,10 +9,10 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: {
-    default: "Gato Caina | Tienda para Gatos",
-    template: "%s | Gato Caina",
+    default: "Pelusas tienda Animal | Donde los bigotes mandan",
+    template: "%s | Pelusas Tienda Animal",
   },
-  description: "Todo lo que tu gato necesita en un solo lugar. Comida, juguetes, accesorios y mucho mas.",
+  description: "Donde los bigotes mandan. Comida, juguetes y accesorios premium para tu felino.",
 };
 
 export default function RootLayout({
