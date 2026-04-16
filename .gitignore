@@ -80,3 +80,14 @@ database.database
 database.db
 diagram.png
 __pycache__/
+
+# Next.js build
+.next/
+out/
+
+# SQLite
+*.db
+dev.db
+
+# Next.js env
+!.env.example
