@@ -3,8 +3,5 @@
 set -o errexit
 
 npm install
+npm run db:generate
 npm run build
-
-pipenv install
-
-pipenv run upgrade
