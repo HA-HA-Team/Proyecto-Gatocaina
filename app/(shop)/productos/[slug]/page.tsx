@@ -18,7 +18,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   if (!product) return { title: "Producto no encontrado" };
   return {
     title: product.name,
-    description: product.description ?? `Compra ${product.name} en Gato Caina`,
+    description: product.description ?? `Compra ${product.name} en Pelusas Tienda Animal`,
   };
 }
 

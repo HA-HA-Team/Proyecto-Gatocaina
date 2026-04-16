@@ -6,14 +6,18 @@ export default function HomePage() {
       {/* Hero */}
       <div className="text-8xl mb-6 animate-bounce">🐱</div>
 
-      <h1 className="text-5xl md:text-7xl font-bold text-stone-800 mb-4 tracking-tight">
-        Gato{" "}
-        <span className="text-orange-500">Caina</span>
+      <h1 className="text-5xl md:text-7xl font-bold text-stone-800 mb-3 tracking-tight">
+        Pelusas{" "}
+        <span className="text-orange-500">Tienda Animal</span>
       </h1>
 
-      <p className="text-xl text-stone-500 mb-10 max-w-lg leading-relaxed">
-        La tienda online con todo lo que tu gato necesita.
-        Comida, juguetes, accesorios y mucho amor felino.
+      <p className="text-lg md:text-xl text-orange-400 font-semibold mb-3 italic">
+        &ldquo;Donde los bigotes mandan&rdquo;
+      </p>
+
+      <p className="text-lg text-stone-500 mb-10 max-w-lg leading-relaxed">
+        Comida, juguetes y accesorios premium para el felino
+        que domina tu corazon y tu sofa.
       </p>
 
       <div className="flex flex-col sm:flex-row gap-4">

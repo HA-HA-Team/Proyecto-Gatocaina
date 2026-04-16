@@ -21,5 +21,5 @@ export default withAuth(
 
 export const config = {
   // Rutas que requieren autenticacion
-  matcher: ["/admin/:path*", "/checkout/:path*"],
+  matcher: ["/admin/:path*", "/checkout", "/checkout/:path*"],
 };

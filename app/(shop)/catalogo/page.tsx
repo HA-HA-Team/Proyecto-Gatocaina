@@ -6,7 +6,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Catalogo",
-  description: "Encuentra todo lo que tu gato necesita en Gato Caina",
+  description: "Encuentra todo lo que tu gato necesita en Pelusas Tienda Animal",
 };
 
 interface PageProps {
