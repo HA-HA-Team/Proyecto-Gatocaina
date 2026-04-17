@@ -19,23 +19,34 @@ export function ProductCard({ product }: ProductCardProps) {
   const firstImage = images[0];
 
   return (
-    <Link href={`/productos/${product.slug}`} className="card group cursor-pointer flex flex-col">
+    <Link
+      href={`/productos/${product.slug}`}
+      className="group flex flex-col bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
+    >
       {/* Imagen */}
-      <div className="relative aspect-square overflow-hidden bg-amber-50">
+      <div className="relative aspect-square overflow-hidden bg-stone-100">
         {firstImage ? (
           <Image
             src={firstImage}
             alt={product.name}
             fill
-            className="object-cover group-hover:scale-105 transition-transform duration-300"
-            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+            className="object-cover group-hover:scale-105 transition-transform duration-500"
+            sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
           />
         ) : (
-          <div className="flex items-center justify-center h-full text-6xl">🐱</div>
+          <div className="flex items-center justify-center h-full text-5xl">🐱</div>
         )}
+
+        {/* Overlay categoria */}
+        <div className="absolute top-3 left-3">
+          <span className="bg-white/90 backdrop-blur-sm text-orange-500 text-[11px] font-bold px-2.5 py-1 rounded-full shadow-sm uppercase tracking-wide">
+            {product.category.name}
+          </span>
+        </div>
+
         {product.stock === 0 && (
-          <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
-            <span className="bg-white text-stone-700 text-xs font-semibold px-3 py-1 rounded-full">
+          <div className="absolute inset-0 bg-white/70 backdrop-blur-sm flex items-center justify-center">
+            <span className="bg-stone-800 text-white text-xs font-bold px-4 py-2 rounded-full tracking-wide">
               Sin stock
             </span>
           </div>
@@ -44,15 +55,19 @@ export function ProductCard({ product }: ProductCardProps) {
 
       {/* Info */}
       <div className="p-4 flex flex-col flex-1">
-        <p className="text-xs font-semibold text-orange-500 uppercase tracking-wide mb-1">
-          {product.category.name}
-        </p>
-        <h3 className="font-medium text-stone-800 text-sm leading-snug line-clamp-2 flex-1 mb-3">
+        <h3 className="font-semibold text-stone-800 text-sm leading-snug line-clamp-2 flex-1 mb-3 group-hover:text-orange-600 transition-colors duration-200">
           {product.name}
         </h3>
-        <p className="text-lg font-bold text-stone-800">
-          {formatPrice(product.price)}
-        </p>
+        <div className="flex items-center justify-between">
+          <p className="text-xl font-bold text-stone-900">
+            {formatPrice(product.price)}
+          </p>
+          {product.stock > 0 && product.stock <= 5 && (
+            <span className="text-xs text-amber-600 font-semibold bg-amber-50 px-2 py-0.5 rounded-full">
+              ¡Últimas {product.stock}!
+            </span>
+          )}
+        </div>
       </div>
     </Link>
   );

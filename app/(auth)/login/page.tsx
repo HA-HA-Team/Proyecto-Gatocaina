@@ -50,12 +50,12 @@ export default function LoginPage() {
   };
 
   return (
-    <div className="card p-8">
+    <div className="bg-white rounded-3xl shadow-xl border border-stone-100 p-8">
       {/* Header */}
       <div className="text-center mb-8">
         <div className="text-5xl mb-3">🐱</div>
-        <h1 className="text-2xl font-bold text-stone-800">Bienvenido de vuelta</h1>
-        <p className="text-stone-500 text-sm mt-1">Inicia sesion en tu cuenta</p>
+        <h1 className="text-2xl font-bold text-stone-900">Bienvenido de vuelta</h1>
+        <p className="text-stone-400 text-sm mt-1">Inicia sesión en tu cuenta</p>
       </div>
 
       <form onSubmit={handleSubmit(onSubmit)} className="space-y-5" noValidate>
